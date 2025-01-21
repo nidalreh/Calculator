@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>ines</title>
+</head>
+<body>
+    <div class="container">
+        <div class="calculator dark">
+            <div class="theme-toggler active">
+                <i class="toggler-icon"></i>
+            </div>
+            <div class="display-screen">
+                <div id="display"></div>
+            </div>
+            <div class="buttons">
+                <table>
+                    <tr>
+                        <td><button class="btn-operator" id="clear" onclick="clr()">C</button></td>
+                        <td><button class="btn-operator" id="/" onclick="opertation('/')">&divide;</button></td>
+                        <td><button class="btn-operator" id="*" onclick="opertation('*')">&times;</button></td>
+                        <td><button class="btn-operator" id="backspace" onclick="back_()"><</button></td>
+                    </tr>
+                    <tr>
+                        <td><button class="btn-number" id="7" onclick="shownumber(7)">7</button></td>
+                        <td><button class="btn-number" id="8" onclick="shownumber(8)">8</button></td>
+                        <td><button class="btn-number" id="9" onclick="shownumber(9)">9</button></td>
+                        <td><button class="btn-operator" id="-" onclick="opertation('-')">-</button></td>
+                    </tr>
+                    <tr>
+                        <td><button class="btn-number" id="4" onclick="shownumber(4)">4</button></td>
+                        <td><button class="btn-number" id="5" onclick="shownumber(5)">5</button></td>
+                        <td><button class="btn-number" id="6" onclick="shownumber(6)">6</button></td>
+                        <td><button class="btn-operator" id="+" onclick="opertation('+')">+</button></td>
+                    </tr>
+                    <tr>
+                        <td><button class="btn-number" id="1" onclick="shownumber(1)">1</button></td>
+                        <td><button class="btn-number" id="2" onclick="shownumber(2)">2</button></td>
+                        <td><button class="btn-number" id="3" onclick="shownumber(3)">3</button></td>
+                        <td rowspan="2"><button class="btn-equal" id="equal" onclick="equal()">=</button></td>
+                    </tr>
+                    <tr>
+                        <td><button class="btn-operator" id="(" onclick="shownumber('.')">.</button></td>
+                        <td><button class="btn-number" id="0" onclick="shownumber(0)">0</button></td>
+                        <td><button class="btn-operator" id=")">)</button></td>
+                    </tr>
+                </table>
+            </div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
